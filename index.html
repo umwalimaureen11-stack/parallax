@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations - Parallax Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Fixed/Sticky Navigation -->
+<div class="navbar" id="myNavbar">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+    <a href="#about"><i class="fa fa-info"></i> About</a>
+    <a href="#services"><i class="fa fa-cogs"></i> Services</a>
+    <a href="#portfolio"><i class="fa fa-image"></i> Portfolio</a>
+    <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+</div>
+
+<!-- Section 1: Parallax Home -->
+<section id="home" class="parallax-section bgimg-1">
+    <div class="caption">
+        <span class="border">Travel Destinations</span>
+    </div>
+</section>
+
+<!-- Section 2: About -->
+<section id="about" class="content-section">
+    <div style="color: #777;background-color:white;text-align:center;padding:80px;">
+        <h2><i class="fa fa-plane"></i> Explore Amazing Places</h2>
+        <p>Join us on a journey to the most beautiful destinations around the world. From pristine beaches to majestic mountains, discover the wonders that await you.</p>
+        <ul style="display: inline-block; text-align: left;">
+            <li><strong>&amp;lt;video&amp;gt;</strong> support for promotional tours</li>
+            <li><strong>&amp;lt;audio&amp;gt;</strong> ambient travel sounds</li>
+            <li><strong>&amp;lt;table&amp;gt;</strong> for booking schedules</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Section 3: Parallax Mountains -->
+<section class="parallax-section bgimg-2">
+    <div class="caption">
+        <span class="border">Beautiful Mountains</span>
+    </div>
+</section>
+
+<!-- Section 4: Services -->
+<section id="services">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:80px;">
+        <h2 style="color: white;"><i class="fa fa-briefcase"></i> Our Services</h2>
+        <p>We offer guided tours, adventure activities, and luxury accommodations tailored to your travel dreams.</p>
+        <p>Whether you're seeking relaxation or adrenaline, we've got you covered.</p>
+        <table style="margin: 20px auto; border-collapse: collapse; color: white;">
+            <tr><th>Service</th><th>Duration</th></tr>
+            <tr><td>Mountain Trek</td><td>5 days</td></tr>
+            <tr><td>Beach Resort</td><td>7 days</td></tr>
+        </table>
+    </div>
+</section>
+
+<!-- Section 5: Parallax Beaches -->
+<section class="parallax-section bgimg-3">
+    <div class="caption">
+        <span class="border">Tropical Beaches</span>
+    </div>
+</section>
+
+<!-- Section 6: Portfolio -->
+<section id="portfolio" class="content-section">
+    <div style="text-align:center;padding:80px;background-color:#f4f4f4;">
+        <h2><i class="fa fa-images"></i> Portfolio Gallery</h2>
+        <p>Check out our stunning photo gallery from recent trips.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px;">
+            <figure style="width: 300px; background: white; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Mountain Landscape" style="width:100%; height:200px; object-fit:cover; border-radius: 8px;">
+                <figcaption style="margin-top: 10px; font-weight: bold;">Majestic Mountains</figcaption>
+            </figure>
+            <figure style="width: 300px; background: white; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="https://images.unsplash.com/photo-1551524164-e1a61b3b49eb?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Tropical Beach" style="width:100%; height:200px; object-fit:cover; border-radius: 8px;">
+                <figcaption style="margin-top: 10px; font-weight: bold;">Tropical Paradise</figcaption>
+            </figure>
+            <figure style="width: 300px; background: white; padding: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="City Skyline" style="width:100%; height:200px; object-fit:cover; border-radius: 8px;">
+                <figcaption style="margin-top: 10px; font-weight: bold;">Urban Adventure</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- Section 7: Parallax Contact Header -->
+<section class="parallax-section bgimg-4">
+    <div class="caption">
+        <span class="border">Contact Us</span>
+    </div>
+</section>
+
+<!-- Section 8: Contact -->
+<section id="contact" class="content-section">
+    <div style="color: #ddd;background-color:#282E34;text-align:center;padding:80px;">
+        <h2 style="color: white;"><i class="fa fa-envelope-open"></i> Get In Touch</h2>
+        <p>Ready to start your adventure? Reach out to us!</p>
+        <form action="/action_page.php" style="max-width:600px;margin: 0 auto;">
+            <p><input class="name input-field" placeholder="Your name" type="text" required></p>
+            <p><input class="email input-field" placeholder="Your email" type="email" required></p>
+            <p><textarea class="message input-field" rows="5" placeholder="Your message" required></textarea></p>
+            <p style="text-align:center;">
+                <button class="submit btn" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+            </p>
+        </form>
+
+        <!-- Google Map iframe -->
+        <h3 style="color: white; margin-top: 60px;"><i class="fa fa-map-marker"></i> Our Location</h3>
+        <div id="googleMap" style="height:400px;background-color:#ddd;margin:40px auto;max-width:800px;border-radius: 10px;overflow: hidden;box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5660143977184!2d-73.93524208459325!3d40.7306109794652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3f4b639f9%3A0xac643b8d5e5e0d8d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1690000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
